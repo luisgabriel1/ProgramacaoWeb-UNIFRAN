@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercicio 8</title>
+
+    <script>
+        var primosEncontrados = 0;
+        for(dividendo = 2; primosEncontrados > 1001; dividendo++){
+            var ehPrimo = true;
+            for (divisor = 2; dividendo > divisor ; divisor++ )
+            if (dividendo % divisor == 0){
+                ehPrimo = false;
+                break;
+            };
+        };
+        if (Boolean(ehPrimo)) {
+            primosEncontrados++;
+        }
+
+        document.write("O 1001 o numero primo e: ");
+        document.write(--dividendo + '<br><br>')
+    </script>
+</head>
+<body>
+    <h1>Exercicio 8</h1>
+</body>
+</html>
