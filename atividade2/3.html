@@ -1,0 +1,43 @@
+<!-- Escreva uma função em JavaScript que realize a conversão de uma temperatura fornecida em graus Fahrenheit (F) para Celsius (C). -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Fahrenheit - Celsius</title>
+
+
+    <script>
+        function conversao(){
+            alert('Deseja converter Fahrenheit ou Celsius')
+
+            var escolha = prompt('Fahrenheit (F)\nCelsius (C)\nEscolha: ').toUpperCase()
+
+            if (escolha == 'F'){
+
+                var numeroF = prompt('Informe a temperatura em Fahrenheit: ')
+                var calculoF = (numeroF - 32) * 0.5
+
+                alert('A conversao de Fahrenheit para Celsius foi: ' + calculoF)
+
+            }
+            if (escolha == 'C'){
+
+                var numeroC = prompt('Informe a temperatura em Celsius: ')
+                var calculoC = (numeroC * 1.8) + 32
+
+                alert('A conversao de Celsius para Fahrenheit foi: ' + calculoC)
+            }
+
+            
+        }
+    </script>
+
+    <button onclick="conversao()">Converta Aqui</button>
+</head>
+<body>
+    
+</body>
+</html>
